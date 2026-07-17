@@ -13,7 +13,6 @@ class SceneManager
 private:
 
 	SceneBase* scene = nullptr;
-//	Scene scene_num = Scene::TITLE;
 
 public:
 
