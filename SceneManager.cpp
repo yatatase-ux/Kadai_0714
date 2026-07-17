@@ -7,17 +7,24 @@ SceneManager::SceneManager()
 
 void SceneManager::Input()
 {
-	if (_kbhit())
+	//if (_kbhit())
+	//{
+	//	int key = _getch();
+
+	//	if (key == ' ')
+	//	{
+	//		ChangeScene(scene->Input()); 
+	//		Update();
+	//		Draw();
+	//	}
+
+	//}
+
+	if(scene->Input() != Scene::None)
 	{
-		int key = _getch();
-
-		if (key == ' ')
-		{
-			ChangeScene(scene->Input()); 
-			Update();
-			Draw();
-		}
-
+		ChangeScene(scene->Input());
+		Update();
+		Draw();
 	}
 }
 

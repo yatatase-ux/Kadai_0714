@@ -6,8 +6,17 @@ SceneOP::SceneOP()
 }
 
 Scene SceneOP::Input()
-{ 
-	return Scene::Play;
+{
+	if (_kbhit())
+	{
+		int key = _getch();
+
+		if (key == ' ')
+		{
+			return Scene::Play;
+		}
+	}
+	return Scene::None;
 }
 
 Scene SceneOP::Update()
