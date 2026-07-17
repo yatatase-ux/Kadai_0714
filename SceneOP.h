@@ -3,5 +3,5 @@
 
 class SceneOP : public SceneBase
 {
-	SCENECLASS(SceneOP);
+    SCENECLASS(SceneOP)
 };

@@ -11,19 +11,19 @@ class SceneManager
 	SINGLETON(SceneManager);
 
 private:
-	enum class Scene
-	{
-		TITLE,
-		PLAY,
-		END
-	};
 
 	SceneBase* scene = nullptr;
-	Scene scene_num = Scene::TITLE;
+//	Scene scene_num = Scene::TITLE;
 
 public:
+
+	void Input();
 
 	void Update();
 
 	void Draw();
+
+	void loop();
+
+	void ChangeScene(Scene next);
 };

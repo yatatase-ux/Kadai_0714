@@ -5,12 +5,17 @@ ScenePlay::ScenePlay()
 
 }
 
-void ScenePlay::Update()
+Scene ScenePlay::Input()
 {
+	return Scene::None;
+}
 
+Scene ScenePlay::Update()
+{
+	return Scene::None;
 }
 
 void ScenePlay::Draw()
 {
-
+	std::cout << "NOW PLAYING!\n";
 }
