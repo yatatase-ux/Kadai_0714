@@ -7,7 +7,7 @@ ScenePlay::ScenePlay()
 
 Scene ScenePlay::Input()
 {
-	return Scene::None;
+	return Scene::End;
 }
 
 Scene ScenePlay::Update()
@@ -18,4 +18,5 @@ Scene ScenePlay::Update()
 void ScenePlay::Draw()
 {
 	std::cout << "NOW PLAYING!\n";
+	std::cout << std::endl;
 }

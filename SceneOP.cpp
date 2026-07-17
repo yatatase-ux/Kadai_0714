@@ -6,18 +6,8 @@ SceneOP::SceneOP()
 }
 
 Scene SceneOP::Input()
-{
-    if (_kbhit())
-    {
-        int key = _getch();
-
-        if (key == ' ')
-        {
-            return Scene::Play;
-        }
-
-    }
-	return Scene::None;
+{ 
+	return Scene::Play;
 }
 
 Scene SceneOP::Update()
@@ -28,4 +18,5 @@ Scene SceneOP::Update()
 void SceneOP::Draw()
 {
 	std::cout << "NOW OPENING!\n";
+	std::cout << std::endl;
 }

@@ -7,7 +7,7 @@ SceneEnd::SceneEnd()
 
 Scene SceneEnd::Input()
 {
-	return Scene::None;
+	return Scene::OP;
 }
 
 Scene SceneEnd::Update()
@@ -18,4 +18,5 @@ Scene SceneEnd::Update()
 void SceneEnd::Draw()
 {
 	std::cout << "NOW ENDING!\n";
+	std::cout << std::endl;
 }
