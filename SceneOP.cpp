@@ -1,11 +1,11 @@
 #include "SceneOP.h"
 
-SceneOP::SceneOP()
+CONSTRUCTOR(SceneOP)
 {
 
 }
 
-Scene SceneOP::Input()
+INPUT(SceneOP)
 {
 	if (_kbhit())
 	{
@@ -19,13 +19,15 @@ Scene SceneOP::Input()
 	return Scene::None;
 }
 
-Scene SceneOP::Update()
+UPDATE(SceneOP)
 {
 	return Scene::None;
 }
 
-void SceneOP::Draw()
+DRAW(SceneOP)
 {
-	std::cout << "NOW OPENING!\n";
+	std::cout << "SPACE TO START\n";
 	std::cout << std::endl;
 }
+
+RESET(SceneOP);

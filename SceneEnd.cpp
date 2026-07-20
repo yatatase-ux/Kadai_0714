@@ -1,11 +1,11 @@
 #include "SceneEnd.h"
 
-SceneEnd::SceneEnd()
+CONSTRUCTOR(SceneEnd)
 {
 
 }
 
-Scene SceneEnd::Input()
+INPUT(SceneEnd)
 {
 	if (_kbhit())
 	{
@@ -19,13 +19,15 @@ Scene SceneEnd::Input()
 	return Scene::None;
 }
 
-Scene SceneEnd::Update()
+UPDATE(SceneEnd)
 {
 	return Scene::None;
 }
 
-void SceneEnd::Draw()
+DRAW(SceneEnd)
 {
-	std::cout << "NOW ENDING!\n";
+	std::cout << "Space to Back Title\n";
 	std::cout << std::endl;
 }
+
+RESET(SceneEnd);
