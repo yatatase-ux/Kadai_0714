@@ -7,7 +7,16 @@ ScenePlay::ScenePlay()
 
 Scene ScenePlay::Input()
 {
-	return Scene::End;
+	if (_kbhit())
+	{
+		int key = _getch();
+
+		if (key == ' ')
+		{
+			return Scene::End;
+		}
+	}
+	return Scene::None;
 }
 
 Scene ScenePlay::Update()

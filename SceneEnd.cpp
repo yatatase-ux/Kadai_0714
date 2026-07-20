@@ -7,7 +7,16 @@ SceneEnd::SceneEnd()
 
 Scene SceneEnd::Input()
 {
-	return Scene::OP;
+	if (_kbhit())
+	{
+		int key = _getch();
+
+		if (key == ' ')
+		{
+			return Scene::OP;
+		}
+	}
+	return Scene::None;
 }
 
 Scene SceneEnd::Update()

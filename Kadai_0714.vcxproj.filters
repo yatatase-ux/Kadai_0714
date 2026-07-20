@@ -77,5 +77,8 @@
     <ClInclude Include="SceneManager.h">
       <Filter>ヘッダー ファイル\GameScene</Filter>
     </ClInclude>
+    <ClInclude Include="Element.h">
+      <Filter>ヘッダー ファイル\Enemy</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
